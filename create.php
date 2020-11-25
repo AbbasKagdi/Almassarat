@@ -1,5 +1,6 @@
 <?php
 	session_start();
+	session_regenerate_id();
 	if(!isset($_SESSION['create'])){
         header("Location: 404.php");
 		die("Not Allowed!");
